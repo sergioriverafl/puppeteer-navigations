@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="my-10 p-3">
+
+        <div class="flex flex-col gap-10">
+
+            <div>
+                <h1 class="font-semibold text-xl">Test de navegación entre pantallas con puppeteer</h1>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2">
+
+                <div class="flex flex-col gap-5">
+                    
+
+                    <div class="flex flex-col">
+                        <label for="names">Nombres</label>
+                        <input type="text" id="names" class="border border-gray-500 bg-gray-100 px-3 py-2 focus:ring-0 outline-none">
+                    </div>            
+            
+                    <div class="flex flex-col">
+                        <label for="last_names">Apellidos</label>
+                        <input type="text" id="last_names" class="border border-gray-500 bg-gray-100 px-3 py-2 focus:ring-0 outline-none">
+                    </div>
+            
+                    <div class="">
+                        <a 
+                            href="#" 
+                            target="popup" 
+                            onclick="window.open('dos.html','popup','width=600,height=600'); return false;" 
+                            class="font-bold text-blue-600"
+                            id="goToTaxes">
+                            Impuestos
+                        </a>
+                    </div>
+            
+                    <div class="flex flex-col">
+                        <label for="">Número de documento</label>
+                        <input type="text" id="document" class="border border-gray-500 bg-gray-100 px-3 py-2 focus:ring-0 outline-none">
+                    </div>            
+            
+                    <div class="flex flex-col">
+                        <label for="">E-mail</label>
+                        <input type="text" id="email" class="border border-gray-500 bg-gray-100 px-3 py-2 focus:ring-0 outline-none">
+                    </div>
+            
+                    <div class="">
+                        <button type="submit" class="px-6 py-2 font-semibold text-white bg-blue-600">Enviar</button>
+                    </div>            
+            
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
